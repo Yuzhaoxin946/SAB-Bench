@@ -183,8 +183,15 @@ To reduce the risk that downstream models exploit superficial lexical or templat
 While the attribution-dimension values serve as the underlying scaffold of each scenario, the final responsibility/blame labels `a ∈ {no, low, medium, high}` are **annotated by humans**. Specifically:
 
 - Two experts in psychology independently annotated responsibility and blame for all instances.
-- Inter-annotator agreement was quantified using raw agreement, Cohen's κ, linearly weighted κ, and quadratically weighted κ.
-- Agreement was consistently high across metrics and scenario types, with all κ statistics (including weighted variants) significantly different from zero (*p* < 0.001).
+- Inter-annotator agreement was quantified using raw agreement, Cohen's κ, linearly weighted κ, and quadratically weighted κ. Agreement was consistently high across metrics and tasks:
+
+  | Task | Acc | κ | κ<sub>lin</sub> | κ<sub>quad</sub> |
+  | --- | :---: | :---: | :---: | :---: |
+  | Responsibility | 92.81 | 89.71 | 92.96 | 95.95 |
+  | Blame | 88.70 | 84.93 | 90.70 | 95.18 |
+
+  *All agreement scores are reported in percentage (×100). All reported κ statistics (including weighted variants) are statistically significant (p < 0.001).*
+
 - **Only instances with consistent annotations from both experts were retained** in the final dataset.
 
 ### 5. Bilingual construction
