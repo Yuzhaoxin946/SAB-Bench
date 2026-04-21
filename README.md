@@ -89,7 +89,21 @@ dataset_info:
 
 # Social Attribution Benchmark
 
+<p align="center">
+  <a href="https://huggingface.co/datasets/yzx010/SAB-Bench">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow?style=for-the-badge" alt="Hugging Face Dataset">
+  </a>
+  <a href="https://github.com/Yuzhaoxin946/SAB-Bench">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
+  </a>
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+    <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=for-the-badge" alt="License: CC BY-NC 4.0">
+  </a>
+</p>
+
 A vignette-based benchmark dataset for studying **social attribution** — the reasoning process of attributing external events to the causes and reasons of agents' social behaviors, and assigning responsibility or blame to the involved agents in social interactions.
+
+🤗 **Hugging Face**: [yzx010/SAB-Bench](https://huggingface.co/datasets/yzx010/SAB-Bench) · 🐙 **GitHub**: [Yuzhaoxin946/SAB-Bench](https://github.com/Yuzhaoxin946/SAB-Bench)
 
 ## Motivation
 
@@ -227,6 +241,18 @@ The dataset is intended to support research on social-attribution-related reason
 - Investigating the role of fine-grained attributional dimensions (intention, voluntariness, foreknowledge, controllability, obligation) in shaping judgments.
 - Comparative analysis across inter-agent relation types (general, vicarious-blame, commanding-chain).
 - Cross-lingual analysis of social attribution (Chinese ↔ English).
+
+## Ethics Statement
+
+**Nature of the data.** All vignettes in this benchmark are **synthetic and purely hypothetical**. They do not describe, reference, or represent any real individuals, organizations, or events. Character names and genders are randomly generated, and no personally identifiable information is collected or released.
+
+**Sensitive content.** Some scenarios involve negative outcomes (e.g., accidents, injury, or harm in laboratory, traffic, military, or gunman settings). These scenarios are constructed **solely as controlled stimuli for studying social-attribution reasoning** and should not be interpreted as endorsing, normalizing, or making claims about any real-world situation.
+
+**Annotation process.** The responsibility and blame labels were provided by two trained experts in psychology, **compensated on an hourly basis** for their annotation work. Inter-annotator agreement was evaluated, and only entries with consistent annotations from both experts were retained. We acknowledge that, with only two annotators from a specific disciplinary background, the labels inevitably reflect their expert perspective rather than a universal moral ground truth.
+
+**Cultural and linguistic scope.** Annotation was conducted on the Chinese version of the data; the English version is a faithful translation reviewed by a translation expert. The underlying attributional framework and judgments therefore reflect the cultural and theoretical traditions from which the annotators draw, and may not fully generalize to other languages, cultures, or normative systems.
+
+**Intended use and limitations.** This benchmark is released to support **scientific research** on the social-reasoning capabilities of AI systems. It is **not intended to be used as a basis for automated decision-making about real individuals** — including but not limited to legal, employment, educational, or content-moderation decisions. Strong performance on this benchmark should not be interpreted as evidence of general ethical or moral competence in real-world settings.
 
 ## License
 
